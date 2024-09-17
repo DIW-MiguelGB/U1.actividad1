@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    justify-content: space-around;
+}
+header {
+    background-color: #fefefe;
+    text-align: center;  
+}
+
+h1 {
+    font-size: 40px;
+    color: #a42727;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    background-color: #f4f4f4;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+nav ul li {
+    display: inline;
+    
+}
+/* con esto hago que desaparezcan las lineas del menu */
+nav ul li a{
+    text-decoration: none;
+}
+/* aqui hago que al pasar el raton por encima interactue */
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+section {
+    margin-top: 20px;
+    border: 2px solid black ;
+    padding: 1em;
+}
+
+section h2 {
+    font-size: 25px;
+    color: #555555;
+}
+
+section p {
+    font-size: 18px;
+    color: #000000;
+}
+
+footer {
+    background-color: #ffffff;
+    text-align: right;
+}

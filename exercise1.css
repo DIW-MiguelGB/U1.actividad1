@@ -1,5 +1,18 @@
+/* aqui nombras el archivo descargado de la fuente que quieras utizar y que cada vez que se visite la pagina desde fuera de tu host se pueda visualizar*/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf');
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+    font-style: normal;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    /* aqui añades al body la fuente sans-serif */
+    font-family: 'libre baskerville', sans-serif;
     background-color: #ffffff;
     color: #000000;
 }
@@ -18,7 +31,10 @@ h1 {
     font-size: 40px;
     color: #a42727;
 }
-
+/* aqui añades a los h1 y h2 la fuente serif descargada */
+h1,h2{
+    font-family: 'Montserrat';
+}
 nav ul {
     display: flex;
     list-style-type: none;

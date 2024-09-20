@@ -1,14 +1,25 @@
+/* CUSTOM PROPERTIES (crear variables para no modificar uno a uno todos los valores)*/
+:root{
+    --primary: hsl(220, 33%, 33%);
+    --secondary: hsl(41, 58%, 81%);
+    --fontPrimary: 'Montserrat';
+
+}
+
+
+
+
 /* aqui nombras el archivo descargado de la fuente que quieras utizar y que cada vez que se visite la pagina desde fuera de tu host se pueda visualizar*/
 @font-face {
     font-family: 'Montserrat';
-    src: url('./fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf');
+    src: url('./fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format("truetype");
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Montserrat';
     /* pones dos url porque una esta mas comprimida que la otra y por seguridad */
-    src: url('./fonts/Montserrat/Montserrat-VariableFont_wght.woff2'),url('./fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+    src: url('./fonts/Montserrat/Montserrat-VariableFont_wght.woff2') format("woff2"),url('./fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format("truetype");
     font-style: normal;
 }
 
@@ -16,7 +27,7 @@ body {
     /* aqui añades al body la fuente sans-serif */
     font-family: 'libre baskerville', sans-serif;
     background-color: #ffffff;
-    background-color: hsl(220, 33%, 33%);
+    background-color: var(--primary);
 }
 
 main{
@@ -34,12 +45,12 @@ header {
 
 h1 {
     font-size: 40px;
-    color: hsl(41, 58%, 81%);
+    color: var(--secondary);
 }
 
 /* aqui añades a los h1 y h2 la fuente serif descargada */
 h1,h2{
-    font-family: 'Montserrat';
+    font-family: var(--fontPrimary);
 }
 
 nav ul {

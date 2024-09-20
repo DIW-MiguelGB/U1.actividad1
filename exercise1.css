@@ -4,6 +4,7 @@
     src: url('./fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf');
     font-style: italic;
 }
+
 @font-face {
     font-family: 'Montserrat';
     src: url('./fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
@@ -16,12 +17,14 @@ body {
     background-color: #ffffff;
     color: #000000;
 }
+
 main{
     display: flex;
     flex-direction: column;
     min-height: 70vh;
     justify-content: space-around;
 }
+
 header {
     background-color: #fefefe;
     text-align: center;  
@@ -31,10 +34,12 @@ h1 {
     font-size: 40px;
     color: #a42727;
 }
+
 /* aqui añades a los h1 y h2 la fuente serif descargada */
 h1,h2{
     font-family: 'Montserrat';
 }
+
 nav ul {
     display: flex;
     list-style-type: none;

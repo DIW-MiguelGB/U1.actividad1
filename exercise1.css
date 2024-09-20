@@ -15,7 +15,7 @@ body {
     /* aqui añades al body la fuente sans-serif */
     font-family: 'libre baskerville', sans-serif;
     background-color: #ffffff;
-    color: #000000;
+    background-color: hsl(220, 33%, 33%);
 }
 
 main{
@@ -26,13 +26,14 @@ main{
 }
 
 header {
-    background-color: #fefefe;
-    text-align: center;  
+    background-color: hsl(203, 41%, 39%);
+    text-align: center;
+      
 }
 
 h1 {
     font-size: 40px;
-    color: #a42727;
+    color: hsl(41, 58%, 81%);
 }
 
 /* aqui añades a los h1 y h2 la fuente serif descargada */
@@ -46,6 +47,7 @@ nav ul {
     background-color: #f4f4f4;
     justify-content: space-around;
     padding: 1em;
+    background-color: hsl(203, 41%, 39%);
 }
 
 nav ul li {
@@ -63,21 +65,21 @@ nav ul li a:hover{
 
 section {
     margin-top: 20px;
-    border: 2px solid black ;
+    border: hsl(199, 31%, 55%) ;
     padding: 1em;
 }
 
 section h2 {
     font-size: 25px;
-    color: #555555;
+    color: hsl(41, 58%, 81%);
 }
 
 section p {
     font-size: 18px;
-    color: #000000;
+    color: hsl(0, 0%, 100%);
 }
 
 footer {
-    background-color: #ffffff;
+    background-color: hsl(220, 33%, 33%);
     text-align: right;
 }

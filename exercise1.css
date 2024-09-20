@@ -2,6 +2,9 @@
 :root{
     --primary: hsl(220, 33%, 33%);
     --secondary: hsl(41, 58%, 81%);
+    --ternary:hsl(203, 41%, 39%);
+    --quaternary: hsl(0, 0%, 100%);
+    --quinary:hsl(199, 31%, 55%);
     --fontPrimary: 'Montserrat';
 
 }
@@ -38,7 +41,7 @@ main{
 }
 
 header {
-    background-color: hsl(203, 41%, 39%);
+    background-color: var(--ternary);
     text-align: center;
       
 }
@@ -59,7 +62,7 @@ nav ul {
     background-color: #f4f4f4;
     justify-content: space-around;
     padding: 1em;
-    background-color: hsl(203, 41%, 39%);
+    background-color: var(--ternary);
 }
 
 nav ul li {
@@ -77,21 +80,21 @@ nav ul li a:hover{
 
 section {
     margin-top: 20px;
-    border: hsl(199, 31%, 55%) ;
+    border: var(--quinary) ;
     padding: 1em;
 }
 
 section h2 {
     font-size: 25px;
-    color: hsl(41, 58%, 81%);
+    color: var(--secondary);
 }
 
 section p {
     font-size: 18px;
-    color: hsl(0, 0%, 100%);
+    color: var(--quaternary);
 }
 
 footer {
-    background-color: hsl(220, 33%, 33%);
+    background-color: var(--primary);
     text-align: right;
 }

@@ -1,16 +1,12 @@
 /* CUSTOM PROPERTIES (crear variables para no modificar uno a uno todos los valores)*/
 :root{
-    --primary: hsl(220, 33%, 33%);
-    --secondary: hsl(41, 58%, 81%);
-    --ternary:hsl(203, 41%, 39%);
-    --quaternary: hsl(0, 0%, 100%);
-    --quinary:hsl(199, 31%, 55%);
+    --primario: hsl(269, 49%, 90%);
+    --secundario: hsl(263, 100%, 97%);
+    --ternary:hsl(252, 100%, 88%);
+    --acentuacion: hsl(250, 89%, 78%);
     --fontPrimary: 'Montserrat';
 
 }
-
-
-
 
 /* aqui nombras el archivo descargado de la fuente que quieras utizar y que cada vez que se visite la pagina desde fuera de tu host se pueda visualizar*/
 @font-face {
@@ -30,7 +26,7 @@ body {
     /* aqui añades al body la fuente sans-serif */
     font-family: 'libre baskerville', sans-serif;
     background-color: #ffffff;
-    background-color: var(--primary);
+    background-color: var(--secundario);
 }
 
 main{
@@ -41,14 +37,15 @@ main{
 }
 
 header {
-    background-color: var(--ternary);
+    background-color: var(--primario);
     text-align: center;
-      
+    border-bottom: 1px solid black;  
 }
 
 h1 {
     font-size: 40px;
     color: var(--secondary);
+    margin: 0;
 }
 
 /* aqui añades a los h1 y h2 la fuente serif descargada */
@@ -62,12 +59,13 @@ nav ul {
     background-color: #f4f4f4;
     justify-content: space-around;
     padding: 1em;
-    background-color: var(--ternary);
+    margin: 0.5em, 0em, 0em;
+    border: 1px solid black;
+    background-color: var(--acentuacion);
 }
 
 nav ul li {
     display: inline;
-    
 }
 /* con esto hago que desaparezcan las lineas del menu */
 nav ul li a{
@@ -79,19 +77,19 @@ nav ul li a:hover{
 }
 
 section {
-    margin-top: 20px;
-    border: var(--quinary) ;
+    border: 1px solid black;
+    border-radius: 5%;
+    background-color: var(--primario);
     padding: 1em;
 }
 
 section h2 {
     font-size: 25px;
-    color: var(--secondary);
+    
 }
 
 section p {
     font-size: 18px;
-    color: var(--quaternary);
 }
 
 footer {

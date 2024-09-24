@@ -6,11 +6,7 @@
     --quaternary: hsl(0, 0%, 100%);
     --quinary:hsl(199, 31%, 55%);
     --fontPrimary: 'Montserrat';
-
 }
-
-
-
 
 /* aqui nombras el archivo descargado de la fuente que quieras utizar y que cada vez que se visite la pagina desde fuera de tu host se pueda visualizar*/
 @font-face {
@@ -26,24 +22,32 @@
     font-style: normal;
 }
 
+html,body{
+    padding: 0;
+    margin: 0;
+}
 body {
+    display: flex;
+    flex-direction: column;
     /* aqui añades al body la fuente sans-serif */
     font-family: 'libre baskerville', sans-serif;
     background-color: #ffffff;
-    background-color: var(--primary);
+    min-height: 100vh;
+    justify-content: space-between;
 }
 
 main{
     display: flex;
-    flex-direction: column;
-    min-height: 70vh;
+    flex-direction: row;
     justify-content: space-around;
 }
 
 header {
     background-color: var(--ternary);
     text-align: center;
-      
+    border-radius: 10px;
+    border:2px solid black; 
+   
 }
 
 h1 {
@@ -59,15 +63,16 @@ h1,h2{
 nav ul {
     display: flex;
     list-style-type: none;
-    background-color: #f4f4f4;
     justify-content: space-around;
     padding: 1em;
     background-color: var(--ternary);
+    border-radius: 10px;
+    border:2px solid black;
+    
 }
 
 nav ul li {
     display: inline;
-    
 }
 /* con esto hago que desaparezcan las lineas del menu */
 nav ul li a{
@@ -79,9 +84,14 @@ nav ul li a:hover{
 }
 
 section {
-    margin-top: 20px;
-    border: var(--quinary) ;
+
+    background-color: var(--primary);
     padding: 1em;
+    border-radius: 10px;
+    border:2px solid black;
+    max-width: 20vw;
+    min-height: 35vh;
+    
 }
 
 section h2 {
@@ -97,4 +107,14 @@ section p {
 footer {
     background-color: var(--primary);
     text-align: right;
+    color: #ffffff;   /*color de la letra*/
+    border-radius: 10px;
+    border:2px solid black;
+}
+
+/* media queris para que pase a columna cuando la pantalla empequeñece */
+@media (width <= 768px){
+    main{
+        flex-direction: column;
+    }
 }

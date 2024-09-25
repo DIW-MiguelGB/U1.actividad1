@@ -2,9 +2,9 @@
 :root{
     --primario: hsl(269, 49%, 90%);
     --secundario: hsl(263, 100%, 97%);
-    --ternary:hsl(252, 100%, 88%);
+    --ternario:hsl(252, 100%, 88%);
     --acentuacion: hsl(250, 89%, 78%);
-    --fontPrimary: 'Montserrat';
+    --fuentePrimaria: 'Montserrat';
 }
 
 /* aqui nombras el archivo descargado de la fuente que quieras utizar y que cada vez que se visite la pagina desde fuera de tu host se pueda visualizar*/
@@ -33,7 +33,7 @@ body {
     font-family: 'libre baskerville', sans-serif;
     background-color: #ffffff;
     min-height: 100vh;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     background-color: var(--secundario);
 }
 
@@ -48,19 +48,19 @@ header {
     text-align: center;
     border-radius: 10px;
     border:2px solid black; 
-   
     border-bottom: 1px solid black;  
 }
 
 h1 {
     font-size: 40px;
-    color: var(--secondary);
+    color: var(--secundario);
     margin: 0;
 }
 
 /* aqui añades a los h1 y h2 la fuente serif descargada */
 h1,h2{
-    font-family: var(--fontPrimary);
+    font-family: var(--fuentePrimaria);
+    font-size: 80px;
 }
 
 nav ul {
@@ -68,44 +68,40 @@ nav ul {
     list-style-type: none;
     justify-content: space-around;
     padding: 1em;
-    background-color: var(--ternary);
+    background-color: var(--ternario);
     border-radius: 10px;
     border:2px solid black;
-
     margin: 0.5em, 0em, 0em;
     border: 1px solid black;
-    background-color: var(--acentuacion);
+    background-color: var(--ternario);
 }
 
 nav ul li {
     display: inline;
 }
+
 /* con esto hago que desaparezcan las lineas del menu */
 nav ul li a{
     text-decoration: none;
 }
+
 /* aqui hago que al pasar el raton por encima interactue */
 nav ul li a:hover{
     text-decoration: underline;
 }
 
 section {
-
-    background-color: var(--primary);
+    /* no se como ajustar el tamaño al texto */
     border: 1px solid black;
     border-radius: 5%;
     background-color: var(--primario);
     padding: 1em;
     border-radius: 10px;
-    border:2px solid black;
     max-width: 20vw;
-    min-height: 35vh;
-    
 }
 
 section h2 {
-    font-size: 25px;
-    
+    font-size: 25px;   
 }
 
 section p {
@@ -113,11 +109,13 @@ section p {
 }
 
 footer {
-    background-color: var(--primary);
+    background-color: var(--primario);
     text-align: right;
-    color: #ffffff;   /*color de la letra*/
+    color: hsl(0, 0%, 0%);   /*color de la letra*/
     border-radius: 10px;
-    border:2px solid black;
+    border:1px solid black;
+    justify-content: end;
+    margin-top: auto;
 }
 
 /* media queris para que pase a columna cuando la pantalla empequeñece */

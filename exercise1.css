@@ -33,7 +33,6 @@ body {
     font-family: 'libre baskerville', sans-serif;
     background-color: #ffffff;
     min-height: 100vh;
-    /* justify-content: space-between; */
     background-color: var(--secundario);
 }
 
@@ -41,6 +40,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    /* flex-grow: 1 que crezca libremente en todo el ancho que pueda(hereda del padre flexible)*/ 
 }
 
 header {
@@ -116,12 +116,13 @@ footer {
     border-radius: 10px;
     border:1px solid black;
     justify-content: end;
-    margin-top: auto;
+    margin-top: 30px;
 }
 
 /* media queris para que pase a columna cuando la pantalla empequeñece */
 @media (width <= 768px){
     main{
         flex-direction: column;
+        justify-content: space-between;
     }
 }

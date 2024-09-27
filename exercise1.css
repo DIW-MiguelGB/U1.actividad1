@@ -40,7 +40,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* flex-grow: 1 que crezca libremente en todo el ancho que pueda(hereda del padre flexible)*/ 
+    flex-grow: 1; /* que crezca libremente en todo el ancho que pueda(hereda del padre flexible)*/ 
 }
 
 header {
@@ -97,8 +97,10 @@ section {
     background-color: var(--primario);
     padding: 1em;
     border-radius: 10px;
-    max-width: 20vw;
+    margin: 10px;
     height: 100%; /*corrección de javi para que el sectio se adapte al tamaño de los textos*/
+    flex-basis: min-content;
+    flex-grow: 1;
 }
 
 section h2 {
@@ -116,7 +118,7 @@ footer {
     border-radius: 10px;
     border:1px solid black;
     justify-content: end;
-    margin-top: 30px;
+
 }
 
 /* media queris para que pase a columna cuando la pantalla empequeñece */
